@@ -1,0 +1,14 @@
+{
+  "name": "Music DL",
+  "image": "mcr.microsoft.com/devcontainers/base:1-ubuntu-24.04",
+  "forwardPorts": [8080],
+  "portsAttributes": {
+    "8080": {
+      "label": "Music DL Web",
+      "onAutoForward": "notify"
+    }
+  },
+  "updateRemoteUserUID": true,
+  "postCreateCommand": "bash .devcontainer/start.sh",
+  "postStartCommand": "bash .devcontainer/start.sh"
+}
